@@ -1,0 +1,118 @@
+// ---------------------------------------------------------------------------
+// Imports
+@import base
+
+body
+  font-family: arial
+
+.container
+  +container
+
+
+html, body
+  width: 100%
+  height: 100%
+
+body
+  background: #f7f7f7
+  background-size: cover
+
+/* Advanced Checkbox Hack */
+body
+  -webkit-animation: bugfix infinite 1s
+  @-webkit-keyframes bugfix from padding: 0 to padding: 0
+
+input[type=checkbox]
+  position: absolute
+  top: -9999px
+  left: -9999px
+
+label
+  display: none
+  cursor: pointer
+  user-select: none
+
+
+/* custom-dropdown */
+nav[role="custom-dropdown"]
+  position: relative
+  width: 100%
+    
+  a, label
+    color: #ccc
+    text-decoration: none
+    font: 1.4em sans-serif
+    transition: color .3s ease-in-out
+    
+  ul
+    padding: 0
+    margin: 0 auto
+    width: 100%
+    list-style: none
+    display: table
+    
+    > li
+      padding: .55em .55em
+      text-align: center
+      +box-shadow(0 .05em .25em 0 rgba(0, 0, 0, .35))
+      background-color: #333
+      cursor: pointer
+      display: table-cell
+    
+      &:hover
+        background-color: rgba(0, 0, 0, .85)
+        color: #fff
+        +box-shadow(0 .05em .25em 0 rgba(0, 0, 0, .35), inset 0 0 0 2em rgba(0, 0, 0, .3))
+    
+        > a
+          color: #fff
+
+/* small screens */
+@media screen and (max-width: 44em)
+  html, body
+    margin: 0
+
+  nav[role="custom-dropdown"]
+    ul
+      display: none
+      height: 100%
+
+    label
+      position: relative
+      display: block
+      width: 100%
+      min-height: 2.25em
+      padding: .45em
+      font-size: 1.1em
+      margin: 0
+      background-color: #414141
+      +background-image(linear-gradient(bottom, #000 0%, #414141 100%))
+      color: #fff
+    
+    label:after
+      position: absolute
+      right: 10px
+      top: 0
+      content: "\2261"
+      font-size: 40px
+      line-height: 30px
+      width: 30px
+    
+    input[type=checkbox]:checked ~ label:after
+      color: #ccc
+        
+    input[type=checkbox]:checked ~ ul
+      display: block
+        
+      > li
+        display: block
+        width: 100%
+        text-align: left
+        background-color: #333
+    
+        &:after
+          position: absolute
+          right: 10px
+          content: "\203A"
+          font: bold 1.4em sans-serif
+          color: #ccc

@@ -1,0 +1,235 @@
+/* line 17, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 14, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/susy-1.0.4/sass/susy/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 5, ../sass/screen.sass */
+body {
+  font-family: arial;
+}
+
+/* line 8, ../sass/screen.sass */
+.container {
+  *zoom: 1;
+  max-width: 960px;
+  _width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+/* line 38, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 12, ../sass/screen.sass */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 16, ../sass/screen.sass */
+body {
+  background: #f7f7f7;
+  background-size: cover;
+}
+
+/* Advanced Checkbox Hack */
+/* line 21, ../sass/screen.sass */
+body {
+  -webkit-animation: bugfix infinite 1s;
+  @-webkit-keyframes bugfix from padding: 0 to padding: 0;
+}
+
+/* line 25, ../sass/screen.sass */
+input[type=checkbox] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+/* line 30, ../sass/screen.sass */
+label {
+  display: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* custom-dropdown */
+/* line 37, ../sass/screen.sass */
+nav[role="custom-dropdown"] {
+  position: relative;
+  width: 100%;
+}
+/* line 41, ../sass/screen.sass */
+nav[role="custom-dropdown"] a, nav[role="custom-dropdown"] label {
+  color: #cccccc;
+  text-decoration: none;
+  font: 1.4em sans-serif;
+  transition: color 0.3s ease-in-out;
+}
+/* line 47, ../sass/screen.sass */
+nav[role="custom-dropdown"] ul {
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  list-style: none;
+  display: table;
+}
+/* line 54, ../sass/screen.sass */
+nav[role="custom-dropdown"] ul > li {
+  padding: 0.55em 0.55em;
+  text-align: center;
+  -webkit-box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.35);
+  background-color: #333333;
+  cursor: pointer;
+  display: table-cell;
+}
+/* line 62, ../sass/screen.sass */
+nav[role="custom-dropdown"] ul > li:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  -webkit-box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.35), inset 0 0 0 2em rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.35), inset 0 0 0 2em rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.35), inset 0 0 0 2em rgba(0, 0, 0, 0.3);
+}
+/* line 67, ../sass/screen.sass */
+nav[role="custom-dropdown"] ul > li:hover > a {
+  color: white;
+}
+
+/* small screens */
+@media screen and (max-width: 44em) {
+  /* line 72, ../sass/screen.sass */
+  html, body {
+    margin: 0;
+  }
+
+  /* line 76, ../sass/screen.sass */
+  nav[role="custom-dropdown"] ul {
+    display: none;
+    height: 100%;
+  }
+  /* line 80, ../sass/screen.sass */
+  nav[role="custom-dropdown"] label {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 2.25em;
+    padding: 0.45em;
+    font-size: 1.1em;
+    margin: 0;
+    background-color: #414141;
+    background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #000000), color-stop(100%, #414141));
+    background-image: -webkit-linear-gradient(bottom, #000000 0%, #414141 100%);
+    background-image: -moz-linear-gradient(bottom, #000000 0%, #414141 100%);
+    background-image: -o-linear-gradient(bottom, #000000 0%, #414141 100%);
+    background-image: linear-gradient(bottom, #000000 0%, #414141 100%);
+    color: white;
+  }
+  /* line 92, ../sass/screen.sass */
+  nav[role="custom-dropdown"] label:after {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    content: "\2261";
+    font-size: 40px;
+    line-height: 30px;
+    width: 30px;
+  }
+  /* line 101, ../sass/screen.sass */
+  nav[role="custom-dropdown"] input[type=checkbox]:checked ~ label:after {
+    color: #cccccc;
+  }
+  /* line 104, ../sass/screen.sass */
+  nav[role="custom-dropdown"] input[type=checkbox]:checked ~ ul {
+    display: block;
+  }
+  /* line 107, ../sass/screen.sass */
+  nav[role="custom-dropdown"] input[type=checkbox]:checked ~ ul > li {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background-color: #333333;
+  }
+  /* line 113, ../sass/screen.sass */
+  nav[role="custom-dropdown"] input[type=checkbox]:checked ~ ul > li:after {
+    position: absolute;
+    right: 10px;
+    content: "\203A";
+    font: bold 1.4em sans-serif;
+    color: #cccccc;
+  }
+}
